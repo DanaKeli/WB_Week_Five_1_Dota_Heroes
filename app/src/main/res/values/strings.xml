@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WB_Week_Five_1</string>
+    <string name="health">Health:</string>
+    <string name="mana">Mana:</string>
+    <string name="attack_range">Attack\nrange:</string>
+    <string name="appName">Dota 2 Heroes</string>
+
+</resources>
