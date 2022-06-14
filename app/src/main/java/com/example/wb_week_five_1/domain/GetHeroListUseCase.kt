@@ -4,7 +4,15 @@ import androidx.lifecycle.LiveData
 
 class GetHeroListUseCase(private val heroRepository: HeroRepository) {
 
-    fun getHeroList(): LiveData<List<Hero>> {
-        return heroRepository.getHeroList()
+    fun getHeroListFromAPI(): LiveData<List<Hero>> {
+        return heroRepository.getHeroListFromAPI()
+    }
+
+    fun getHeroesFromFile(): LiveData<List<Hero>> {
+        return heroRepository.getHeroListFromFile()
+    }
+
+    fun addHeroListToFile() {
+        heroRepository.addHeroListToFile()
     }
 }

@@ -41,6 +41,7 @@ class HeroesListFragment : Fragment() {
         fm = requireActivity().supportFragmentManager
 
         vm = ViewModelProvider(this)[HeroesVM::class.java]
+        vm.onCreate(requireContext())
         vm.heroesList.observe(viewLifecycleOwner) {
             adapter.submitList(it)
         }

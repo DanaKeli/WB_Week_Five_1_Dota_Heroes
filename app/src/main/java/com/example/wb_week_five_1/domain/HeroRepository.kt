@@ -4,5 +4,9 @@ import androidx.lifecycle.LiveData
 
 interface HeroRepository {
 
-    fun getHeroList(): LiveData<List<Hero>>
+    fun getHeroListFromAPI(): LiveData<List<Hero>>
+
+    fun getHeroListFromFile(): LiveData<List<Hero>>
+
+    fun addHeroListToFile()
 }
